@@ -1,0 +1,64 @@
+// ol li{
+//     float: left;
+//     width: 50%;//helps to determine number of columns, for instance 33.3% displays 3 columns
+// }
+// ol{
+//     list-style-type: disc;
+// }
+
+// .multi-column {
+//    -moz-column-count: 2;
+//    -moz-column-gap: 20px;
+//    -moz-column-fill: auto;
+//    -webkit-column-count: 2;
+//    -webkit-column-gap: 20px;
+//    -webkit-column-fill: auto;
+//    column-count: 2;
+//    column-gap: 20px;
+//    column-fill: auto;
+//    list-style-position: inside;
+// }
+
+ul {
+    max-width: 750px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding-left: 0;
+    // border: 1px solid blue;    
+  }
+  
+  li {
+    list-style: inside;
+    border: 1px dashed rgb(230, 39, 39);
+    padding: 5px;
+    background-color: rgba(67, 67, 177, 0.637);
+    color: rgb(228, 163, 163);    
+    list-style-type: none;
+    text-align: center;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+th,td{
+  min-width: 50px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.userNumber{
+  min-width: 750px;
+}
+
+.tries{
+  padding-top: 7.5px;
+}
